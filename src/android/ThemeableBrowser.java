@@ -91,7 +91,8 @@ public class ThemeableBrowser extends CordovaPlugin {
     private static final String LOAD_START_EVENT = "loadstart";
     private static final String LOAD_STOP_EVENT = "loadstop";
     private static final String LOAD_ERROR_EVENT = "loaderror";
-
+    private static final String CLEAR_ALL_CACHE = "clearcache";
+    private static final String CLEAR_SESSION_CACHE = "clearsessioncache";
     private static final String ALIGN_LEFT = "left";
     private static final String ALIGN_RIGHT = "right";
 
@@ -104,7 +105,8 @@ public class ThemeableBrowser extends CordovaPlugin {
     private static final String ERR_LOADFAIL = "loadfail";
     private static final String WRN_UNEXPECTED = "unexpected";
     private static final String WRN_UNDEFINED = "undefined";
-
+    private boolean clearAllCache = true;
+    private boolean clearSessionCache = true;
     private ThemeableBrowserDialog dialog;
     private WebView inAppWebView;
     private EditText edittext;
