@@ -1403,8 +1403,8 @@ public class ThemeableBrowser extends CordovaPlugin {
     private static class Options {
         public boolean location = true;
         public boolean hidden = false;
-        public boolean clearcache = false;
-        public boolean clearsessioncache = false;
+        public boolean clearcache = true;
+        public boolean clearsessioncache = true;
         public boolean zoom = true;
         public boolean hardwareback = true;
 
